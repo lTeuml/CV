@@ -1,37 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tom Bouvrée</title>
-</head>
-<body>
-    
-</body>
-</html>
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Tom Bouvrée</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1 {
-            font-size: 2.5em;
-            font-weight: bold;
-            margin-top: 20vh;
-        }
-    </style>
 </head>
 <body>
-    <h1><strong>Tom Bouvrée</strong></h1>
+    <header role="banner">
+        <div>
+            <h1 id="top">Tom Bouvrée</h1>
+            <img src="photo_cv.JPG" alt="Photo de profil de Tom Bouvrée" width="200px" aria-describedby="photo-desc">
+            <p id="photo-desc">Photo de profil de Tom Bouvrée</p>
+            <p>Tél: <span>06 35 32 11 41</span></p>
+            <p>Email: <a href="mailto:tom.bvre@gmail.com">tom.bvre@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bouvree/" target="_blank">Mon LinkedIn</a></p>
+        </div>
+        <hr>
+        <nav role="navigation" aria-label="Table des matières">
+            <ul>
+                <li><a href="#a-propos">Propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#mes-experiences">Expériences</a></li>
+                <li><a href="#mes-competences">Compétences</a></li>
+                <li><a href="#centres-interet">Centres d'Intérêt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <section id="a-propos" aria-labelledby="a-propos-title">
+            <h2 id="a-propos-title">Propos <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+            <h3>Passionné par l’univers digital, j’adore relever des défis créatifs et organiser des projets de A à Z. Curieux, dynamique et à l’écoute, je cherche une alternance pour mettre en pratique ma capacité à gérer des projets tout en développant des stratégies digitales innovantes.</h3>
+        </section>
+
+        <section id="formation" aria-labelledby="formation-title">
+            <h2 id="formation-title">Ma Formation <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+            <h3>(2024-2027) Bachelor Chef de Projets Digitaux à la Normandie Web School - Le Havre</h3>
+            <h3>(2023-2024) Préparation aux concours des douanes - Ecole à distance chez EFM</h3>
+            <h3>(2019-2023) Baccalauréat Technologique Sciences et Technologies du Management et de la Gestion - Lycée Jacques-Prevert, Pont-Audemer</h3>
+        </section>
+
+        <section id="mes-experiences" aria-labelledby="experiences-title">
+            <h2 id="experiences-title">Expériences <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+            <h3>Janvier à Septembre 2024 - Intermarché - Contrat étudiant en CDI</h3>
+            <ul>
+                <li>Mise en rayon</li>
+                <li>Caisse</li>
+            </ul>
+            <h3>Juillet à Août 2023 - Intérim - Logistique chez NOZ, Pont-Audemer</h3>
+            <ul>
+                <li>Logistique</li>
+                <li>Etiquetage</li>
+            </ul>
+        </section>
+
+        <section id="mes-competences" aria-labelledby="competences-title">
+            <h2 id="competences-title">Compétences <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+            <ul>
+                <li>Gestion des réseaux sociaux</li>
+                <li>Photographie et retouche</li>
+                <li>Vidéo (tournage et montage)</li>
+                <li>Rédaction</li>
+                <li>Design web</li>
+                <li>Communication</li>
+            </ul>
+        </section>
+
+        <section id="centres-interet" aria-labelledby="centres-interet-title">
+            <h2 id="centres-interet-title">Centres d'Intérêt <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+            <ul>
+                <li>Voyager</li>
+                <li>Aventure</li>
+                <li>Astronomie</li>
+                <li>Football</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
