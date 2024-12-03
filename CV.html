@@ -1,61 +1,197 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Tom Bouvrée</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            background: linear-gradient(to right, rgb(231, 181, 88), white);
+            color: black;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1:hover {
+            background-color: black;
+            color: #ffcc00;
+            transform: scale(1.25);
+            cursor: pointer;
+        }
+
+        header img {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            border: 5px solid rgb(231, 181, 88);
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+
+        header img:hover {
+            transform: scale(1.25);
+        }
+
+        header .personal-info {
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .personal-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .personal-info a:hover {
+            color: #ffcc00;
+        }
+
+        .phoneNumber span:hover {
+            color: #ffcc00; 
+            cursor: pointer;
+        }
+
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        #aPropos {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .darkSection {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgb(231, 181, 88);
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-top:hover {
+            background-color: #ffcc00;
+        }
+    </style>
 </head>
 <body>
-    <header role="banner">
-        <div>
-            <h1 id="top">Tom Bouvrée</h1>
-            <img src="photo_cv.JPG" alt="Photo de profil de Tom Bouvrée" width="200px" aria-describedby="photo-desc">
-            <p id="photo-desc">Photo de profil de Tom Bouvrée</p>
-            <p>Tél: <span>06 35 32 11 41</span></p>
+    <header>
+        <h1 id="top">Tom Bouvrée</h1>
+        <img src="photo_cv.JPG" alt="Photo de profil de Tom Bouvrée">
+        <div class="personal-info">
+            <p class="phoneNumber">Tél: <span>06 35 32 11 41</span></p>
             <p>Email: <a href="mailto:tom.bvre@gmail.com">tom.bvre@gmail.com</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/bouvree/" target="_blank">Mon LinkedIn</a></p>
         </div>
-        <hr>
-        <nav role="navigation" aria-label="Table des matières">
+        <nav aria-label="Navigation principale">
             <ul>
-                <li><a href="#a-propos">Propos</a></li>
+                <li><a href="#aPropos">À propos</a></li>
                 <li><a href="#formation">Formation</a></li>
-                <li><a href="#mes-experiences">Expériences</a></li>
-                <li><a href="#mes-competences">Compétences</a></li>
-                <li><a href="#centres-interet">Centres d'Intérêt</a></li>
+                <li><a href="#mesExperiences">Expériences</a></li>
+                <li><a href="#mesCompetences">Compétences</a></li>
+                <li><a href="#centresInteret">Centres d'intérêt</a></li>
             </ul>
         </nav>
     </header>
-
-    <main role="main">
-        <section id="a-propos" aria-labelledby="a-propos-title">
-            <h2 id="a-propos-title">Propos <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
-            <h3>Passionné par l’univers digital, j’adore relever des défis créatifs et organiser des projets de A à Z. Curieux, dynamique et à l’écoute, je cherche une alternance pour mettre en pratique ma capacité à gérer des projets tout en développant des stratégies digitales innovantes.</h3>
+    <main>
+        <section id="aPropos" class="darkSection">
+            <h2>À propos</h2>
+            <p>
+                Passionné par l’univers digital, j’adore relever des défis créatifs et organiser des projets de A à Z.
+                Curieux, dynamique et à l’écoute, je cherche une alternance pour mettre en pratique ma capacité à gérer des projets
+                tout en développant des stratégies digitales innovantes.
+            </p>
         </section>
-
-        <section id="formation" aria-labelledby="formation-title">
-            <h2 id="formation-title">Ma Formation <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
-            <h3>(2024-2027) Bachelor Chef de Projets Digitaux à la Normandie Web School - Le Havre</h3>
-            <h3>(2023-2024) Préparation aux concours des douanes - Ecole à distance chez EFM</h3>
-            <h3>(2019-2023) Baccalauréat Technologique Sciences et Technologies du Management et de la Gestion - Lycée Jacques-Prevert, Pont-Audemer</h3>
+        <section id="formation">
+            <h2>Formation</h2>
+            <p>(2024-2027) Bachelor Chef de Projets Digitaux - Normandie Web School</p>
+            <p>(2023-2024) Préparation aux concours des douanes - EFM</p>
+            <p>(2019-2023) Baccalauréat STMG - Lycée Jacques-Prevert</p>
         </section>
-
-        <section id="mes-experiences" aria-labelledby="experiences-title">
-            <h2 id="experiences-title">Expériences <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
-            <h3>Janvier à Septembre 2024 - Intermarché - Contrat étudiant en CDI</h3>
+        <section id="mesExperiences">
+            <h2>Expériences</h2>
+            <p>Janvier à Septembre 2024 - Intermarché - Contrat étudiant en CDI</p>
             <ul>
                 <li>Mise en rayon</li>
                 <li>Caisse</li>
             </ul>
-            <h3>Juillet à Août 2023 - Intérim - Logistique chez NOZ, Pont-Audemer</h3>
+            <p>Juillet à Août 2023 - Intérim - Logistique chez NOZ, Pont-Audemer</p>
             <ul>
                 <li>Logistique</li>
-                <li>Etiquetage</li>
+                <li>Étiquetage</li>
             </ul>
         </section>
-
-        <section id="mes-competences" aria-labelledby="competences-title">
-            <h2 id="competences-title">Compétences <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+        <section id="mesCompetences">
+            <h2>Compétences</h2>
             <ul>
                 <li>Gestion des réseaux sociaux</li>
                 <li>Photographie et retouche</li>
@@ -65,9 +201,8 @@
                 <li>Communication</li>
             </ul>
         </section>
-
-        <section id="centres-interet" aria-labelledby="centres-interet-title">
-            <h2 id="centres-interet-title">Centres d'Intérêt <a href="#top" aria-label="Retour en haut de la page">🚀</a></h2>
+        <section id="centresInteret">
+            <h2>Centres d'intérêt</h2>
             <ul>
                 <li>Voyager</li>
                 <li>Aventure</li>
@@ -76,5 +211,16 @@
             </ul>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Tom Bouvrée</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑ Haut</button>
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
