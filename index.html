@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tom Bouvrée</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            background-color: rgba(231, 181, 88, 0.904);
+            background-image: url('background_image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            background: linear-gradient(to right, rgb(231, 181, 88), white);
+            color: black;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 2rem;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1:hover {
+            background-color: black;
+            color: #ffcc00;
+            transform: scale(1.25);
+            cursor: pointer;
+        }
+        header img {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            border: 5px solid rgb(231, 181, 88);
+            width: 150px;
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.25);
+        }
+        header .personal-info {
+            margin-bottom: 40px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 30px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .personal-info a {
+            color: white;
+            text-decoration: none;
+        }
+        .personal-info a:hover {
+            color: #ffcc00;
+        }
+        .phoneNumber span:hover {
+            color: #ffcc00; 
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            display: none;
+            cursor: pointer;
+        }
+        .back-to-top.show { display: block; }
+        .back-to-top:hover {
+            background-color: #ffcc00;
+        }
+
+        .animated-block {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgb(0, 0, 0);
+            color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgb(219, 3, 3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .animated-block:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="top">Tom Bouvrée</h1>
+        <img src="assets/images/photo_cv.JPG" alt="Photo de profil de Tom Bouvrée">
+        <div class="personal-info">
+            <p class="phoneNumber">Tél: <span>06 35 32 11 41</span></p>
+            <p>Email: <a href="mailto:tom.bvre@gmail.com">tom.bvre@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bouvree/" target="_blank">Mon LinkedIn</a></p>
+        </div>
+        <nav aria-label="Navigation principale">
+            <ul>
+                <li><a href="#aPropos">À propos</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#mesExperiences">Expériences</a></li>
+                <li><a href="#mesCompetences">Compétences</a></li>
+                <li><a href="#centresInteret">Centres d'intérêt</a></li>
+                <li><a href="#langues">Langues</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="aPropos" class="animated-block">
+            <h2>À propos</h2>
+            <p>
+                Passionné par l’univers digital, j’adore relever des défis créatifs et organiser des projets de A à Z.
+                Curieux, dynamique et à l’écoute, je cherche une alternance pour mettre en pratique ma capacité à gérer des projets
+                tout en développant des stratégies digitales innovantes.
+            </p>
+        </section>
+        <section id="formation" class="animated-block">
+            <h2>Formation</h2>
+            <p>(2024-2027) Bachelor Chef de Projets Digitaux - Normandie Web School</p>
+            <p>(2023-2024) Préparation aux concours des douanes - EFM</p>
+            <p>(2019-2023) Baccalauréat STMG - Lycée Jacques-Prevert</p>
+        </section>
+        <section id="mesExperiences" class="animated-block">
+            <h2>Expériences</h2>
+            <p>Janvier à Septembre 2024 - Intermarché - Contrat étudiant en CDI</p>
+            <ul>
+                <li>Mise en rayon</li>
+                <li>Caisse</li>
+            </ul>
+            <p>Juillet à Août 2023 - Intérim - Logistique chez NOZ, Pont-Audemer</p>
+            <ul>
+                <li>Logistique</li>
+                <li>Étiquetage</li>
+            </ul>
+        </section>
+        <section id="mesCompetences" class="animated-block">
+            <h2>Compétences</h2>
+            <ul>
+                <li>Gestion des réseaux sociaux</li>
+                <li>Photographie et retouche</li>
+                <li>Vidéo (tournage et montage)</li>
+                <li>Rédaction</li>
+                <li>Design web</li>
+                <li>Communication</li>
+            </ul>
+        </section>
+        <section id="centresInteret" class="animated-block">
+            <h2>Centres d'intérêt</h2>
+            <ul>
+                <li>Voyager</li>
+                <li>Aventure</li>
+                <li>Astronomie</li>
+                <li>Football</li>
+            </ul>
+        </section>
+
+        <section id="langues" class="animated-block">
+            <h2>Langues</h2>
+            <ul>
+                <li>Anglais : Niveau scolaire (B2)</li> 
+                <li>Espagnol : Niveau scolaire (B2)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tom Bouvrée</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑ </button>
+    
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', () => 
+            document.querySelector('.back-to-top').classList.toggle('show', window.scrollY > 300));
+    </script>
+</body>
+</html>
